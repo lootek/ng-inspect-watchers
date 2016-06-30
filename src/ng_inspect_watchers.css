@@ -1,8 +1,8 @@
 .iw-ng-scope-highlight {
-  border: 1px solid red !important;
-  position: relative !important;
+  box-shadow: inset 0 0 1em gold, 0 0 1em red;
 }
-.iw-ng-watcher-count {
+.iw-ng-scope-highlight::before {
+  content: attr(iw-ng-scope-content);
   position: absolute;
   top: 0;
   right: 0;

@@ -81,7 +81,8 @@ var main = function(angular, document) {
     var insertWatcherCountInto = function(element) {
       var watcherCount = ngWatchCount(element);
 
-      element.append(watcherCountTemplate.replace('{watcherCount}', watcherCount));
+      element.attr('iw-ng-scope-content', watcherCount);
+      // element.append(watcherCountTemplate.replace('{watcherCount}', watcherCount));
     };
 
     var showWatchers = function(event) {
